@@ -1,6 +1,6 @@
 {
   "mappings": [
-    "/content/boq/:/",
-    "/content/boq/configuration:/.helix/config.json"
+    "/content/boq-home/:/",
+    "/content/boq-home/configuration:/.helix/config.json"
   ]
 }
