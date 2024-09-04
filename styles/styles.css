@@ -289,8 +289,25 @@ main .section.blue-highlight img {
   margin-bottom: 5px;
 }
 
-main .section.quick-links {
-  
+main .section.quick-links .default-content-wrapper p:nth-child(1) {
+  text-align: center;
+  font-weight: 700;
+  font-size: 34px;
+}
+
+main .section.quick-links .columns-wrapper .columns > div > div {
+  background: #f2f6f8;
+  padding: 20px;
+}
+
+main .section.quick-links .columns-wrapper .columns > div > div:hover {
+  border-top: solid 4px #febd36;
+  margin-top: -4px;
+  cursor: pointer;
+}
+
+main .section.quick-links img {
+  width: 42px;
 }
 
 .cb-align {
