@@ -106,19 +106,7 @@
           {
             "name": "Highlight",
             "value": "highlight"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "section",
-    "fields": [
-      {
-        "component": "multiselect",
-        "name": "style",
-        "label": "Style",
-        "options": [
+          },
           {
             "name": "Blue Highlight",
             "value": "blue-highlight"
