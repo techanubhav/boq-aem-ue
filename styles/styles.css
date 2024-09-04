@@ -274,6 +274,21 @@ main .section.blue-highlight {
   color: #fff;
 }
 
+main .section.blue-highlight a:any-link {
+  color: #fff;
+}
+
+main .section.blue-highlight strong {
+  font-weight: 700;
+  font-size: 22px;
+}
+
+main .section.blue-highlight img {
+  width: 30px;
+  height: 32px;
+  margin-bottom: 5px;
+}
+
 .cb-align {
   text-align:center;
 }
