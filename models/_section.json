@@ -35,6 +35,10 @@
             {
               "name": "Quick Links",
               "value": "quick-links"
+            },
+            {
+              "name": "Important Information",
+              "value": "important-information"
             }
           ]
         }
