@@ -15,7 +15,7 @@ header nav {
   align-items: center;
   gap: 0 2em;
   margin: auto;
-  max-width: 1264px;
+  max-width: 1400px;
   height: var(--nav-height);
   padding: 0 1rem;
   font-family: var(--body-font-family);
@@ -264,6 +264,16 @@ header nav .nav-sections ul > li > ul > li {
     border-bottom: 8px solid var(--light-color);
   }
 
+  header nav .nav-sections .default-content-wrapper > ul > li > strong::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top:37px;
+    width: 100%;
+    height: 8px;
+    background-color: #febd35;
+  }
+
   header nav .nav-sections .default-content-wrapper > ul > li > ul > li {
     padding: 8px 0;
   }
@@ -272,4 +282,84 @@ header nav .nav-sections ul > li > ul > li {
 /* tools */
 header nav .nav-tools {
   grid-area: tools;
+}
+
+/* nav-links */
+header nav .nav-links {
+  flex: 1 1 auto;
+  display: none;
+  visibility: hidden;
+  background-color: var(--overlay-color);
+}
+
+header nav .nav-links ul {
+  list-style: none;
+  padding-left: 0;
+  font-size: var(--body-font-size-xs);
+  font-weight: 300;
+}
+
+header nav .nav-links ul > li {
+  font-weight: 700;
+}
+
+header nav .nav-links ul > li > ul {
+  margin-top: 0;
+}
+
+header nav .nav-links ul > li > ul > li {
+  font-weight: 500;
+}
+
+@media (width >= 1200px) {
+  header nav .nav-links {
+    display: block;
+    visibility: visible;
+    white-space: nowrap;
+    font-size: var(--body-font-size-xxs);
+  }
+
+  header nav .nav-links ul {
+    display: flex;
+    gap: 2em;
+    margin-left: 350px;
+    font-size: var(--body-font-size-xxs);
+  }
+
+  header nav .nav-links .default-content-wrapper > ul > li {
+    flex: 0 1 auto;
+    position: relative;
+    font-weight: 500;
+  }
+
+  header nav .nav-links .default-content-wrapper > ul > li > ul {
+    display: none;
+    position: relative;
+  }
+
+  header nav .nav-links .default-content-wrapper > ul > li > ul::before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: 8px;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid var(--light-color);
+  }
+
+  header nav .nav-links .default-content-wrapper > ul > li > strong::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top:37px;
+    width: 100%;
+    height: 8px;
+    background-color: #febd35;
+  }
+
+  header nav .nav-links .default-content-wrapper > ul > li > ul > li {
+    padding: 8px 0;
+  }
 }
