@@ -2,11 +2,13 @@ footer {
   padding: 2rem;
   background-color: #fff;
   font-size: var(--body-font-size-s);
+  border-top: solid 4px #febd36
 }
 
 footer .footer {
   max-width: 1200px;
   margin: auto;
+  margin-top:50px;
 }
 
 footer .columns img {
