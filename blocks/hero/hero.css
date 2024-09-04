@@ -24,7 +24,7 @@ main .hero-container {
 .hero h1 {
   max-width: 1200px;
   color: white;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .hero h2 {
@@ -33,7 +33,7 @@ main .hero-container {
   line-height: 28px;
   margin-bottom: 10px;
   margin-top: 20px;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .hero picture {
