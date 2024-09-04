@@ -31,6 +31,10 @@
             {
               "name": "Blue Highlight",
               "value": "blue-highlight"
+            },
+            {
+              "name": "Quick Links",
+              "value": "quick-links"
             }
           ]
         }
