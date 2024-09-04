@@ -435,7 +435,7 @@ function decorateButtons(element) {
       const up = a.parentElement;
       const twoup = a.parentElement.parentElement;
       if (!a.querySelector('img')) {
-        if (up.childNodes.length === 1 && (up.tagName === 'P' || up.tagName === 'DIV')) {
+        if (a.getAttribute('title') === 'Log On') {
           a.className = 'button'; // default
           up.classList.add('button-container');
         }
@@ -456,6 +456,38 @@ function decorateButtons(element) {
         ) {
           a.className = 'button secondary';
           twoup.classList.add('button-container');
+        }
+        if (
+          up.childNodes.length === 1
+          && up.tagName === 'EM'
+          && twoup.childNodes.length < 5
+          && twoup.tagName === 'H2'
+        ) {
+          a.className = 'button secondary inline-button';
+          twoup.className = 'cb-align';
+        }
+        if (
+          Array.from(twoup.childNodes).filter(node => {
+            return !(node.nodeType === Node.TEXT_NODE && !/\S/.test(node.nodeValue));}).length === 2
+          && up.tagName === 'STRONG'
+          && twoup.tagName === 'P'
+        ) {
+          a.className = 'button primary';
+          if(!twoup.classList.contains('button-container')) {
+            twoup.classList.add('button-container');
+          }
+        }
+        if (
+          Array.from(twoup.childNodes).filter(node => {
+            return !(node.nodeType === Node.TEXT_NODE && !/\S/.test(node.nodeValue));}).length === 2
+          && up.tagName === 'EM'
+          && twoup.tagName === 'P'
+        ) {
+          a.className = 'button secondary';
+          a.style.marginLeft = '1em';
+          if(!twoup.classList.contains('button-container')) {
+            twoup.classList.add('button-container');
+          }
         }
       }
     }

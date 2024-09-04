@@ -12,9 +12,10 @@
 
 :root {
   /* colors */
-  --link-color: #035fe6;
+  --link-color: #1b75bc;
   --link-hover-color: #136ff6;
   --background-color: white;
+  --button-color: #1b75bc;
   --light-color: #eee;
   --dark-color: #ccc;
   --text-color: black;
@@ -146,23 +147,55 @@ a:hover {
 /* buttons */
 a.button:any-link,
 button {
+  position: relative;
   font-family: var(--body-font-family);
   display: inline-block;
   box-sizing: border-box;
   text-decoration: none;
-  border: 2px solid transparent;
+  border: 1px solid var(--button-color);
   padding: 5px 30px;
   text-align: center;
+  font-size: var(--body-font-size-xs);
   font-style: normal;
   font-weight: 600;
   cursor: pointer;
-  color: var(--background-color);
-  background-color: var(--link-color);
+  color: white;
+  background-color: var(--button-color);
   margin: 16px 0;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  border-radius: 30px;
+  border-radius: 3px;
+  padding: 15px 55px 15px 25px;
+}
+
+a.button:any-link::before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  top: 50%;
+  width: 15px;
+  border-top: solid 2px #febd36;
+  right: 30px;
+  transition: all .1s ease-out;
+  display: block;
+}
+
+a.button:any-link::after {
+  content: "";
+  position: absolute;
+  height: 8px;
+  top: calc(50% - 4px);
+  width: 8px;
+  border: 2px solid #febd36;
+  border-bottom: none;
+  border-left: none;
+  right: 30px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  transition: right .1s ease-out;
+  display: block;
 }
 
 a.button:hover,
@@ -183,7 +216,15 @@ a.button.secondary,
 button.secondary {
   background-color: unset;
   border: 2px solid currentcolor;
-  color: var(--text-color);
+  color: var(--button-color);
+}
+
+a.button.secondary::before {
+  border-color: var(--button-color);
+}
+
+a.button.secondary::after {
+  border-color: var(--button-color);
 }
 
 main img {
@@ -225,4 +266,14 @@ main .section {
 main .section.light,
 main .section.highlight {
   background-color: var(--light-color);
+}
+
+.cb-align {
+  text-align:center;
+}
+
+.inline-button {
+  display:inline !important;
+  font-size: var(--heading-font-size-l);
+  margin-left: 250px;
 }
