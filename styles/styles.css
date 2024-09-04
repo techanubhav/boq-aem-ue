@@ -316,7 +316,7 @@ main .section.important-information .default-content-wrapper p:nth-child(1) {
   font-size: 34px;
 }
 
-main .section.important-information .default-content-wrapper p:nth-child(1) a:any-link {
+main .section.important-information a:any-link {
   color: black;
   text-decoration: none;
   cursor: pointer;
