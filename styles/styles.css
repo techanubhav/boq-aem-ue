@@ -16,6 +16,7 @@
   --link-hover-color: #136ff6;
   --background-color: white;
   --button-color: #1b75bc;
+  --button-color-dark: black;
   --light-color: #e2e2e2;
   --dark-color: #ccc;
   --text-color: black;
@@ -296,7 +297,7 @@ main .section.quick-links .default-content-wrapper p:nth-child(1) {
 }
 
 main .section.quick-links .columns-wrapper .columns > div > div {
-  background: #e9e9e9;
+  background: #f2f6f8;
   padding: 20px;
 }
 
@@ -308,6 +309,18 @@ main .section.quick-links .columns-wrapper .columns > div > div:hover {
 
 main .section.quick-links img {
   width: 42px;
+}
+
+main .section.quick-links a.button.secondary {
+  color: var(--button-color-dark);
+}
+
+main .section.quick-links a.button.secondary::before {
+  border-color: var(--button-color-dark);
+}
+
+main .section.quick-links a.button.secondary::after {
+  border-color: var(--button-color-dark);
 }
 
 /* Important Information Section */
