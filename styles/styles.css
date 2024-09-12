@@ -312,15 +312,15 @@ main .section.quick-links img {
 }
 
 main .section.quick-links a.button.secondary {
-  color: var(--button-color-dark);
+  color: var(--button-color);
 }
 
 main .section.quick-links a.button.secondary::before {
-  border-color: var(--button-color-dark);
+  border-color: var(--button-color);
 }
 
 main .section.quick-links a.button.secondary::after {
-  border-color: var(--button-color-dark);
+  border-color: var(--button-color);
 }
 
 /* Important Information Section */
