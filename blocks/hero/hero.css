@@ -4,7 +4,7 @@ main .hero-container > div {
 
 main .hero-container {
   padding: 0;
-  background: linear-gradient(to right, rgba(15, 117, 188, .6), transparent, rgba(255, 255, 255, .6));
+  /* background: linear-gradient(to right, rgba(15, 117, 188, .6), transparent, rgba(255, 255, 255, .6)); */
 }
 
 .hero {
