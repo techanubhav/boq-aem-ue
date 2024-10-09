@@ -1,10 +1,9 @@
-/**
- * loads and decorates the helloworld block
- * @param {Element} block The helloworld block element
- */
-export default async function decorate(block) {
+export default function appendHelloWorld(el) {
     // Create the <h1> element
-    var h1 = document.createElement('h1');
+    let h1 = document.createElement('h1');
     h1.innerText = "Hello, World!";
-    block.append(h1);
+    console.log("anubhav");    
+    el.appendChild(h1);
+    console.log(el);
+    return el;
 }
