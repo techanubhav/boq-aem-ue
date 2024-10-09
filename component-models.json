@@ -196,5 +196,17 @@
         "valueType": "string"
       }
     ]
+  },
+  {
+    "id": "helloworld",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "text",
+        "label": "Text",
+        "value": ""
+      }
+    ]
   }
 ]
